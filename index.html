@@ -10,11 +10,11 @@
     
     <div class="bg-black">
 
-    <nav class="flex justify-around items-center pt-6">
+    <nav class="flex justify-between px-6 pt-6 sm:justify-around items-center sm:pt-6">
 
         <img class="" src="imagefile/Gentium..svg" alt="">
 
-        <div class="flex gap-8 text-white">
+        <div class="hidden md:flex gap-8 text-white">
 
         <a class="relative inline-block border-b-[3px] border-b-black after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:bg-red-500 after:w-0 hover:after:w-full after:transition-all after:duration-300" href="#">Home</a>
 
@@ -32,15 +32,23 @@
 
         </div>
 
+        <div class="flex flex-col gap-2 md:hidden">
+
+          <div class="w-[24px] h-[2px] bg-white"></div>
+          <div class="w-[24px] h-[2px] bg-white"></div>
+          <div class="w-[24px] h-[2px] bg-white"></div>
+
+        </div>
+
     </nav>
 
     <section>
 
-        <div class="flex flex-col mt-40 ml-50 gap-8">
+        <div class="flex flex-col mt-20 sm:mt-40 ml-2 sm:ml-50 gap-30 sm:gap-8">
 
             <div class="w-[70px] h-[3px] bg-[#E9204F]"></div>
 
-        <h3 class="text-white text-[78px] font-bold">
+        <h3 class="text-white text-[28px] sm:text-[78px] font-bold">
             We're a digital <br>
             agency.
         </h3>
@@ -56,9 +64,9 @@
 
         </div>
 
-        <img class="w-[500px] h-[500px] absolute right-50 top-50" src="imagefile/adam.jpg" alt="">
+        <img class="w-[500px] h-[550px] absolute -right-50 sm:right-50 top-20 sm:top-50" src="imagefile/adam.jpg" alt="">
  
-        <div class="flex gap-10 justify-center">
+        <div class="sm:flex gap-10 ml-15 sm:justify-center">
 
         <div class="flex flex-col mt-80">
 
@@ -80,7 +88,7 @@
 
     </div>
 
-    <div class="flex mt-80">
+    <div class="flex mt-[20px] sm:mt-80">
 
         <div class="group bg-[#1B1B1B] w-[380px] h-[385px] flex flex-col justify-center gap-8 pl-10 hover:bg-[#E9204F] transition-all duration-500">
           
@@ -100,7 +108,7 @@
 
       </div>      
 
-      <div class="flex mt-80">
+      <div class="flex mt-[20px] sm:mt-80">
 
         <div class="group bg-[#1B1B1B] w-[380px] h-[385px] flex flex-col justify-center gap-8 pl-10 hover:bg-[#E9204F] transition-all duration-500">
       
@@ -127,7 +135,7 @@
 
     <section class="mt-[142px] flex flex-col items-center justify-center mb-[140px]">
 
-        <div class="flex flex-col mr-240">
+        <div class="flex flex-col mr-40 sm:mr-240">
 
         <div class="bg-[#E9204F] w-[40px] h-[2px]"></div>
 
@@ -137,7 +145,7 @@
 
     </div>
 
-        <div class="grid grid-cols-3 gap-5 mt-[60px]">
+        <div class="flex flex-col sm:grid grid-cols-3 gap-5 mt-[60px]">
 
 
             
@@ -313,7 +321,7 @@ class="relative overflow-hidden group flex justify-between px-7 items-center w-[
 
     <section class="mt-[140px]">
         
-<div class="flex justify-between items-center mx-[250px] mb-[60px]">
+<div class="flex justify-between items-center sm:mx-[250px] mb-[60px]">
 
     <div class="flex flex-col">
 
@@ -338,57 +346,37 @@ class="relative overflow-hidden group flex justify-between px-7 items-center w-[
 
     </div>
 
-    <div class="flex justify-center gap-12">
-
-        <div class="size-[475px] overflow-hidden">
-
-            <div class="grayscale hover:grayscale-0 relative hover:scale-125 transition duration-200 ease-in bg-[url('../imagefile/Article-1.png')] w-full h-full">
-
-              <div class="p-6 hover:translate-x-4 opacity-0 hover:opacity-100 transition duration-200 ease-in flex flex-col justify-center items-center z-10 w-full h-full bg-black/50">
-
-                <h3 class="text-white font-bold text-lg">Product Desing</h3>
-
-                <h4 class="text-white font-semibold text-base">Desing / Marketing</h4>
-
-              </div>
-
-            </div>
-
+    <div class="flex gap-6 overflow-x-auto overflow-y-hidden scroll-smooth sm:justify-center px-4 snap-x snap-mandatory">
+  
+      <div class="min-w-[320px] sm:w-[475px] flex-shrink-0 overflow-hidden snap-start">
+        <div class="grayscale hover:grayscale-0 relative hover:scale-110 transition duration-300 ease-in bg-[url('../imagefile/Article-1.png')] bg-cover bg-center w-full h-[390px] sm:h-[475px]">
+          <div class="p-6 hover:translate-x-4 opacity-0 hover:opacity-100 transition duration-300 ease-in flex flex-col justify-center items-center z-10 w-full h-full bg-black/50">
+            <h3 class="text-white font-bold text-lg">Product Design</h3>
+            <h4 class="text-white font-semibold text-base">Design / Marketing</h4>
           </div>
-
-        <div class="size-[475px] overflow-hidden">
-
-            <div class="grayscale hover:grayscale-0 relative hover:scale-125 transition duration-200 ease-in bg-[url('../imagefile/Article-2.png')] w-full h-full">
-
-              <div class="p-6 hover:translate-x-4 opacity-0 hover:opacity-100 transition duration-200 ease-in flex flex-col justify-center items-center z-10 w-full h-full bg-black/50">
-
-                <h3 class="text-white font-bold text-lg">Woody</h3>
-
-                <h4 class="text-white font-semibold text-base">Architecture / Concept</h4>
-
-              </div>
-
-            </div>
-
+        </div>
+      </div>
+    
+      <div class="min-w-[320px] sm:w-[475px] flex-shrink-0 overflow-hidden snap-start">
+        <div class="grayscale hover:grayscale-0 relative hover:scale-110 transition duration-300 ease-in bg-[url('../imagefile/Article-2.png')] bg-cover bg-center w-full h-[390px] sm:h-[475px]">
+          <div class="p-6 hover:translate-x-4 opacity-0 hover:opacity-100 transition duration-300 ease-in flex flex-col justify-center items-center z-10 w-full h-full bg-black/50">
+            <h3 class="text-white font-bold text-lg">Woody</h3>
+            <h4 class="text-white font-semibold text-base">Architecture / Concept</h4>
           </div>
-
-          <div class="size-[475px] overflow-hidden">
-
-            <div class="grayscale hover:grayscale-0 relative hover:scale-125 transition duration-200 ease-in bg-[url('../imagefile/Article-3.png')] w-full h-full">
-
-              <div class="p-6 hover:translate-x-4 opacity-0 hover:opacity-100 transition duration-200 ease-in flex flex-col justify-center items-center z-10 w-full h-full bg-black/50">
-
-                <h3 class="text-white font-bold text-lg">Interior Desing</h3>
-
-                <h4 class="text-white font-semibold text-base">Architecture / Desing</h4>
-
-              </div>
-
-            </div>
-
+        </div>
+      </div>
+    
+      <div class="min-w-[320px] sm:w-[475px] flex-shrink-0 overflow-hidden snap-start">
+        <div class="grayscale hover:grayscale-0 relative hover:scale-110 transition duration-300 ease-in bg-[url('../imagefile/Article-3.png')] bg-cover bg-center w-full h-[390px] sm:h-[475px]">
+          <div class="p-6 hover:translate-x-4 opacity-0 hover:opacity-100 transition duration-300 ease-in flex flex-col justify-center items-center z-10 w-full h-full bg-black/50">
+            <h3 class="text-white font-bold text-lg">Interior Design</h3>
+            <h4 class="text-white font-semibold text-base">Architecture / Design</h4>
           </div>
-          
+        </div>
+      </div>
+    
     </div>
+    
 
     <div class="flex mt-[46px] gap-[16px] justify-center mb-[140px]">
 
@@ -412,11 +400,11 @@ class="relative overflow-hidden group flex justify-between px-7 items-center w-[
 
     <section>
 
-      <div class="bg-[#E9204F] w-[2px] h-[60px] mb-[142px] mx-[748px]"></div>
+      <div class="bg-[#E9204F] w-[2px] h-[60px] mb-[80px] sm:mb-[142px] ml-60 sm:mx-[748px]"></div>
 
-      <div class="flex items-center gap-[200px] mx-[220px] mb-[60px]">
+      <div class="flex-col sm:flex flex-row items-start sm:items-center gap-[200px] sm:mx-[220px] mb-[60px]">
 
-      <div class="flex flex-col">
+      <div class="gap-5 sm:flex flex-col">
 
         <div class="w-[40px] h-[2px] bg-[#E9204F]"></div>
 
@@ -431,24 +419,24 @@ class="relative overflow-hidden group flex justify-between px-7 items-center w-[
 
       </div>
 
-      <div class="flex gap-[30px] justify-center mb-[70px]">
+      <div class="flex-col sm:flex flex-row gap-[30px] justify-center mb-[70px]">
 
-      <img class="w-[770px] h-[600px] grayscale hover:grayscale-0 transition-all duration-500" src="imagefile/Background-1.png" alt="">
+      <img class="w-[500px] h-[400px] sm:w-[770px] sm:h-[600px] mb-[30px] grayscale hover:grayscale-0 transition-all duration-500" src="imagefile/Background-1.png" alt="">
 
       <div class="flex flex-col gap-[30px]">
 
-        <img class="w-[400px] h-[285px] grayscale hover:grayscale-0 transition-all duration-500" src="imagefile/background-2.png" alt="">
+        <img class="w-[500px] h-[400px] sm:w-[400px] sm:h-[285px] grayscale hover:grayscale-0 transition-all duration-500" src="imagefile/background-2.png" alt="">
 
-        <img class="w-[400px] h-[285px] grayscale hover:grayscale-0 transition-all duration-500" src="imagefile/background-2.png" alt="">
+        <img class="w-[500px] h-[400px] sm:w-[400px] sm:h-[285px] grayscale hover:grayscale-0 transition-all duration-500" src="imagefile/background-2.png" alt="">
 
       </div>
 
     </div>
 
 
-    <div class="flex justify-center gap-20 mb-[110px]">
+    <div class="flex-col ml-20 sm:flex flex-row justify-center gap-20 mb-[110px]">
 
-      <div class="flex flex-col gap-5">
+      <div class="flex flex-col gap-5 mb-8">
 
         <h3 class="text-[22px] font-bold">Who we are</h3>
 
@@ -461,7 +449,7 @@ class="relative overflow-hidden group flex justify-between px-7 items-center w-[
 
       </div>
 
-      <div class="flex flex-col gap-5">
+      <div class="flex flex-col gap-5 mb-8">
 
         <h3 class="text-[22px] font-bold">Our philosophy</h3>
 
@@ -474,7 +462,7 @@ class="relative overflow-hidden group flex justify-between px-7 items-center w-[
 
       </div>
 
-      <div class="flex flex-col gap-5">
+      <div class="flex flex-col gap-5 mb-8">
 
         <h3 class="text-[22px] font-bold">How we work</h3>
 
@@ -493,11 +481,11 @@ class="relative overflow-hidden group flex justify-between px-7 items-center w-[
 
     <section>
 
-      <div class="bg-[#E9204F] w-[2px] h-[60px] mb-[142px] mx-[748px]"></div>
+      <div class="bg-[#E9204F] w-[2px] h-[60px] mb-[142px] ml-60 sm:mx-[748px]"></div>
 
-      <div class="flex justify-center gap-20 mb-[140px]">
+      <div class="flex-col sm:flex flex-row justify-center gap-20 mb-[140px] ml-10 sm:ml-0">
 
-        <img class="w-[462px] h-[621px]" src="imagefile/adam-2.png" alt="">
+        <img class="size-[350px] sm:w-[462px] sm:h-[621px] mb-15 sm:mb-0" src="imagefile/adam-2.png" alt="">
 
         <div class="flex flex-col justify-center gap-10">
 
@@ -522,7 +510,7 @@ class="relative overflow-hidden group flex justify-between px-7 items-center w-[
 
       </div>
 
-      <div class="flex gap-[72px] justify-center mb-[110px]">
+      <div class="grid grid-cols-2 ml-10 sm:flex gap-[72px] justify-center mb-[110px]">
 
         <img src="imagefile/N'Oreal.svg" alt="">
         
@@ -542,7 +530,7 @@ class="relative overflow-hidden group flex justify-between px-7 items-center w-[
 
     <section>
 
-      <div class="bg-[#E9204F] w-[2px] h-[60px] mb-[142px] mx-[748px]"></div>
+      <div class="bg-[#E9204F] w-[2px] h-[60px] mb-20 sm:mb-[142px] ml-60 sm:mx-[748px]"></div>
 
       <div class="flex flex-col justify-center items-center gap-5 mb-[80px]">
 
@@ -552,7 +540,7 @@ class="relative overflow-hidden group flex justify-between px-7 items-center w-[
 
       </div>
 
-      <div class="flex gap-13 justify-center"> 
+      <div class="flex-col ml-2 sm:flex flex-row gap-13 justify-center"> 
 
         <div class="relative inline-block group">
 
@@ -605,9 +593,9 @@ class="relative overflow-hidden group flex justify-between px-7 items-center w-[
 
     <footer class="w-full h-[340px] bg-[#1B1B1B]">
 
-      <div class="flex items-center justify-between mx-[150px] pt-[146px]">
+      <div class="flex-col sm:flex flex-row sm:items-center sm:justify-between mx-[150px] pt-15 sm:pt-[146px]">
 
-      <div class="flex gap-2">
+      <div class="flex gap-2 mb-4 sm:mb-0">
 
         <img class="size-[48px] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer" src="imagefile/Facebook.svg" alt="">
 
@@ -619,7 +607,7 @@ class="relative overflow-hidden group flex justify-between px-7 items-center w-[
 
       </div>
 
-      <h3 class="text-[48px] font-bold text-white">Let's Talk?</h3>
+      <h3 class="text-[39px] sm:text-[48px] font-bold text-white mb-4 sm:mb-0">Let's Talk?</h3>
 
       <button class="relative overflow-hidden border-[2px] border-[#E9204F] font-bold w-[215px] h-[60px] text-white group transition-all duration-500">
 
@@ -635,7 +623,7 @@ class="relative overflow-hidden group flex justify-between px-7 items-center w-[
 
     </footer>
 
-    <div class="bg-[#161616] w-full h-[137px] pt-[40px] flex justify-around">
+    <div class="bg-[#161616] w-full h-[194px] sm:h-[137px] pt-10 sm:pt-[40px] flex-col sm:flex flex-row justify-around">
 
       <div class="flex flex-col items-center gap-3 cursor-pointer">
 
@@ -654,9 +642,9 @@ class="relative overflow-hidden group flex justify-between px-7 items-center w-[
 
     </div>
 
-    <div class="bg-[#000000] w-full h-[85px] flex justify-around items-center pt-[33px]">
+    <div class="bg-[#000000] w-full h-[109px] sm:h-[85px] flex-col pl-20 sm:pl-0 sm:flex flex-row sm:justify-around items-center pt-[33px]">
 
-      <h3 class="text-[#747474] text-[13px]">2018 © <span class="text-[17px] text-white">Gentium</span>, All rights reserved.</h3>
+      <h3 class="text-[#747474] text-[13px] pl-14 sm:pl-0 pb-4 sm:pb-0">2018 © <span class="text-[17px] text-white">Gentium</span>, All rights reserved.</h3>
 
       <div class="flex gap-[20px] text-white">
 
